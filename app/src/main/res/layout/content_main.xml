@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verticalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dip"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/timerButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Timer" />
+
+        <Space
+            android:layout_width="5dip"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/stopTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/workTimerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="25m00s"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/breakTimerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="5m00s"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/workButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Focus" />
+
+        <Space
+            android:layout_width="5dip"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/breakButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relax" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip" />
+
+    <TextView
+        android:id="@+id/workTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Focus interval:" />
+
+    <SeekBar
+        android:id="@+id/workSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:max="12"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/breakTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relax interval" />
+
+    <SeekBar
+        android:id="@+id/breakSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:max="15"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/notificationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification interval:" />
+
+    <SeekBar
+        android:id="@+id/notificationSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:max="11" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip" />
+
+
+</LinearLayout>
